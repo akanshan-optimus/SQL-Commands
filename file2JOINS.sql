@@ -37,3 +37,22 @@ select * from Employee FULL OUTER JOIN  department ON Employee.emp_id= departmen
 --SELF JOIN
 select e1.street,e1.add_id, e2.city, e2.emp_id from Adress as  e1, Adress as e2 WHERE e1.city=e2.city;
 
+
+select * from Employee where emp_name LIKE '%a%';
+
+select * from employee ORDER BY salary desc;
+
+
+--CROSS JOIN
+select emp_name, dp_name from employee cross join department;
+
+select emp_name, dp_name, city from employee cross join department cross join Adress;
+
+select * from Adress;
+
+select * from employee;
+select * from department;
+
+
+
+
